@@ -1,0 +1,83 @@
+.lista{
+  min-width: 395px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  margin: 100px;
+  border-width: 2px;
+  flex-direction: row;
+}
+
+.itemLista{
+  border-width: 2px;
+  background-color: rgb(227, 227, 227);
+  margin: 20px;
+  display: flex;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.nmDep{
+  font-weight: lighter;
+  width: auto;
+  width: 50%;
+  color: rgb(0, 0, 0);
+  margin-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.crud{
+  float: right;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.crudImg{
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+  align-self: center;
+}
+
+.delete{
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  align-self: center;
+}
+
+.edit{
+  font-weight: lighter;
+  color: #0066FF;
+  align-self: center;
+}
+
+.addBtn{
+  margin-top: 1%;
+  align-items: center;
+  margin-right: 0%;
+  background-color: #61b23c;
+  width: 47px;
+  height: 47px;
+  display: flex;
+  float: right;
+  border-radius: 30px;
+  align-content: center;
+  justify-content: center;
+}
+
+.mais{
+  font-size: 40px;
+  color: white;
+}
+
+
