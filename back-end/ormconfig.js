@@ -4,5 +4,7 @@ module.exports = {
     "port": 5432,
     "username": "postgres",
     "password": "pyetra123",
-    "database": "gd-proj"
+    "database": "gd-proj",
+    "entities": [
+        __dirname + "/src/entities/*ts"]
  }
