@@ -1,5 +1,7 @@
 import { MigrationInterface, QueryRunner, Table } from "typeorm"
 
+/*As migrations farão o trabalho de criar as tabelas e verificar se já temos alguma existente*/
+
 export class CreateDepartamento1649949423588 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {

@@ -1,3 +1,5 @@
+/*Arquivo de configuração do TypeORM */
+
 module.exports = {
     "type": "postgres",
     "host": "localhost",
