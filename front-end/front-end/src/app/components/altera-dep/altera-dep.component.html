@@ -1,0 +1,19 @@
+<div class="formulario">
+  <div class="back">
+    <a href="/departamentos" class="backBtn">
+      X</a>
+  </div>
+  <h1>Editar departamento</h1>
+  <div class="form2">
+    <label>Nome</label>
+    <br>
+    <input type="text" placeholder={{nm_dep}} [(ngModel)]="altsDep.nome" />
+    <br>
+    <label>Sigla</label>
+    <br>
+    <input type="text" placeholder={{sigla_dep}} [(ngModel)]="altsDep.sigla" />
+  </div>
+  <a href="/">
+    <button (click)="alterDep()">Adicionar</button>
+  </a>
+</div>

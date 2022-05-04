@@ -1,11 +1,14 @@
 import "reflect-metadata";
 import express from "express";
-import "./database";
+import ".";
 import { routes } from "./routes";
 
 /*Aqui configuramos em qual porta a API funcionará*/
 
 const app = express();
+const cors = require('cors');
+
+app.use(cors())
 
 app.use(express.json());
 

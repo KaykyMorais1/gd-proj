@@ -1,0 +1,21 @@
+<div class="lista">
+  <div class="itens">
+    <h1 class="nomes">Gerenciador de departamentos</h1>
+    <a href="/criar-departamento">
+      <input class="addBtn" value="+ Incluir novo" type="button"><!-- Clicar para chamar o método create -->
+    </a>
+  </div>
+  <!-- Assim que executado o programa chama o método read e retorna todos os registros -->
+  <div class="itemLista" *ngFor="let u of users; let i = index">
+    <!-- O ngFor vai replicar a div para cada departamento na lista -->
+    <a href="/funcionarios/" class="nmDep" (click)="getId(i, u.id)">{{u.nome}} ( {{u.sigla}})</a>
+    <!-- Nome do departamento -->
+    <div class="crud">
+      <img class="crudImg" src='assets\bin.png' (click)="deleta(u.nome, i, u.id)" />
+      <!-- Clicar para chamar o método delete -->
+      <a href="" class="delete" (click)="deleta(u.nome, i, u.id)">Deletar</a>
+      <img class="crudImg" src='assets\editing.png' /><!-- Clicar para chamar o método update -->
+      <a href="/altera-departamento" class="edit" (click)="getId(i, u.id)">Alterar</a>
+    </div>
+  </div>
+</div>

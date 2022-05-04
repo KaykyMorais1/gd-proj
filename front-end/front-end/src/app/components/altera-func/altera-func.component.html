@@ -1,0 +1,25 @@
+<div class="formulario">
+  <div class="back">
+    <a href="/funcionarios" class="backBtn">
+      X</a>
+  </div>
+  <h1>Editar funcionario</h1>
+  <div class="form2">
+    <label>Foto de perfil</label>
+    <br>
+    <img src={{default}} style="max-width: 150px; margin-top: 15px; margin-bottom: 15px; margin-left: 120px; " />
+    <br>
+    <input type="file" accept="image/*" [(ngModel)]="altsFunc.foto" id="myFile" (change)="teste($event)">
+    <br>
+    <label>Nome</label>
+    <br>
+    <input class="campos" type="text" [(ngModel)]="altsFunc.nome" placeholder={{nm_func}} />
+    <br>
+    <label>RG</label>
+    <br>
+    <input class="campos" type="text" readonly placeholder={{rg_func}} />
+  </div>
+  <a href="/funcionarios">
+    <button (click)="alteraFunc()">Adicionar</button>
+  </a>
+</div>

@@ -1,0 +1,75 @@
+.formulario {
+  width: 500px;
+  height: auto;
+  min-width: 395px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  align-content: center;
+  box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.539);
+}
+
+h1 {
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: auto;
+}
+
+.back {
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.backBtn {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  margin-bottom: -12px;
+}
+
+input {
+  border-radius: 10px;
+  width: 75%;
+  align-content: center;
+  height: 30px;
+  font-size: 15px;
+  border-color: black;
+  border-width: 1px;
+}
+
+
+.form2 {
+  margin: auto;
+  width: 100%;
+  align-content: center;
+  margin-left: 10%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+button {
+  margin-left: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-content: center;
+  font-size: medium;
+  color: white;
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: rgb(0, 225, 94);
+  width: auto;
+  text-align: center;
+  height: 40px;
+}

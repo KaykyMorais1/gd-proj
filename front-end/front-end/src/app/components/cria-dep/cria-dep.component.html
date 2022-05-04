@@ -1,0 +1,19 @@
+<div class="formulario">
+  <div class="back">
+    <a href="/departamentos" class="backBtn">
+      X</a>
+  </div>
+  <h1>Adicionar um departamento</h1>
+  <div class="form2">
+    <h3>Nome</h3>
+    <br>
+    <input type="text" [(ngModel)]="novoDep.nome" />
+    <br>
+    <h3>Sigla</h3>
+    <br>
+    <input type="text" [(ngModel)]="novoDep.sigla" />
+  </div>
+  <a href="/">
+    <button (click)="addDep()">Adicionar</button>
+  </a>
+</div>

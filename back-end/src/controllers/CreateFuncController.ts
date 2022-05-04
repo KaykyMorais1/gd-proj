@@ -8,7 +8,6 @@ export class CreateFuncController{
         const service = new CreateFuncService()
 
         const result = await service.execute({
-            
             departamento_id,
             nome,
             foto,

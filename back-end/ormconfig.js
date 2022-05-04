@@ -8,5 +8,6 @@ module.exports = {
     "password": "pyetra123",
     "database": "gd-proj",
     "entities": [
-        __dirname + "/src/entities/*ts"]
+        __dirname + "/src/entities/*ts"],
+    "migrations": ['src/database/migrations/*ts']
  }

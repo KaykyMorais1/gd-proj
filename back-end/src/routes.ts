@@ -1,3 +1,4 @@
+import { GetOneDepController } from './controllers/GetOneDepController';
 import { UpdateFuncController } from './controllers/UpdateFuncController';
 import { DeleteFuncController } from './controllers/DeleteFuncController';
 import { GetAllFuncController } from './controllers/GetAllFuncController';
@@ -18,6 +19,7 @@ routes.get("/departamentos", new GetAllDepController().handle);
 routes.delete("/departamentos/:id", new DeleteDepController().handle);
 routes.put("/departamentos/:id", new UpdateDepController().handle);
 
+routes.get("/funcionarios/:departamento_id", new GetOneDepController().handle);
 routes.post("/funcionarios", new CreateFuncController().handle);
 routes.get("/funcionarios", new GetAllFuncController().handle);
 routes.delete("/funcionarios/:id", new DeleteFuncController().handle);

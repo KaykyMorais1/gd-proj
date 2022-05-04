@@ -1,0 +1,32 @@
+<div class="formulario">
+  <div class="back">
+    <a href="/departamentos" class="backBtn">
+      X</a>
+  </div>
+  <h1>Adicionar um funcionário</h1>
+  <div class="form2">
+    <div>
+      <h3>Foto de perfil</h3>
+      <img src={{default}} style="max-width: 150px; margin-top: 15px; margin-bottom: 15px; margin-left: 120px; " />
+      <input type="file" accept="image/*" id="myFile" (change)="teste($event)">
+    </div>
+    <br>
+    <h3>Nome</h3>
+    <br>
+    <input class="campos" type="text" [(ngModel)]="novoFunc.nome" />
+    <br>
+    <h3>Departamento</h3>
+    <br>
+    <select [(ngModel)]="novoFunc.departamento_id">
+      <option *ngFor="let d of deps; let i = index" [ngValue]="d.id">{{d.nome}}</option>
+    </select>
+    <br>
+    <h3>RG</h3>
+    <br>
+    <input type="number" class="campos" [(ngModel)]="novoFunc.rg" />
+    <br>
+  </div>
+  <a href="/funcionarios">
+    <button (click)="addFunc()">Adicionar</button>
+  </a>
+</div>
